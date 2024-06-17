@@ -8,15 +8,15 @@ function initialize() {
 
 var rmap1, rmap2, mk1;
 function showcov(m) {
-    if (m === 0) {
+    if (m === "0") {
         rmap1.setVisible('false');
         rmap2.setVisible('false');
     }
-    if (m === 1) {
+    if (m === "1") {
         rmap1.setVisible('true');
         rmap2.setVisible('false');
     }
-    if (m === 2) {
+    if (m === "2") {
         rmap1.setVisible('false');
         rmap2.setVisible('true');
     }
