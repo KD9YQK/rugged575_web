@@ -2,79 +2,80 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-    <title>Radio Mobile - Coverage Online</title>
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/map.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  <title>Radio Mobile - Coverage Online</title>
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/map.css">
 </head>
 
 <body onload="initialize()">
-    <main>
-        <div class="intro">
-            <h1>Rugged 575</h1>
-            <p>A GMRS repeater tower servicing Naperville, IL and the surrounding area.</p>
-        </div>
-        <div class="tab">
-            <button class="tablinks" onclick="openMenu(event, 'Home')">Home</button>
-            <button class="tablinks" onclick="openMenu(event, 'Events')">Events</button>
-            <button class="tablinks" onclick="openMenu(event, 'Coverage')">Coverage Map</button>
-            <button class="tablinks" onclick="openMenu(event, 'Donate')">Donate</button>
-            <button class="tablinks" onclick="openMenu(event, 'Contact')">Contact</button>
-          </div>
-          
-          <div id="Home" class="tabcontent">
-            <h3>Rugged 575</h3>
-            <p>Some info about the tower maybe?</p>
-          </div>
-          
-          <div id="Events" class="tabcontent">
-            <h3>Event Calender</h3>
-            <p>A list of upcoming events and weekly nets.</p>
-          </div>
-          
-          <div id="Coverage" class="tabcontent">
-            <script src="scripts/map.js"></script>
-            <script src="scripts/overlay.js"></script>
-            <table width="100%">
-                <tr>
-                    <th colspan="2">Mobile Coverage</th>
-                </tr>
-                <tr>
-                    <td bgcolor="#E0E0E0" colspan="2">
-                        <form name="form2">
-                            <select onchange="javascript:selectmaptiles(parseInt(this.value));">
-                                <option value="0" selected>OSM - R</option>
-                                <option value="3">USGS - Topo</option>
-                                <option value="4">USGS - Sat</option>
-                                <option value="5">OpenTopoMap</option>
-                                <option value="6">OSM - G</option>
-                            </select>
-                            <select onchange="javascript:showcov(parseInt(this.value));">
-                                <option value="0">None</option>
-                                <option value="1" selected>50 Watts</option>
-                                <option value="2">5 Watts</option>
-                            </select>
-                            <input type="checkbox" name="ckm1" checked="true" onclick="showtow(mk1,ckm1);">Rugged 575
-                            Tower</input>
-                        </form>
-                    </td>
-                </tr>
-            </table>
-            <div id="map_canvas" style="width:100%"></div>
-          </div>
-        
-          <div id="Donate" class="tabcontent">
-            <h3>Donations</h3>
-            <p>Here is a good place to explain costs and upkeep and beg for money.</p>
-          </div>
-          
-          <div id="Contact" class="tabcontent">
-            <h3>Contact Information</h3>
-            <p>Here is a good place to put Rob's email address.</p>
-          </div>
-         
-    </main>
+  <main>
+    <script src="scripts/menu.js"></script>
+    <div class="intro">
+      <h1>Rugged 575</h1>
+      <p>A GMRS repeater tower servicing Naperville, IL and the surrounding area.</p>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openMenu(event, 'Home')">Home</button>
+      <button class="tablinks" onclick="openMenu(event, 'Events')">Events</button>
+      <button class="tablinks" onclick="openMenu(event, 'Coverage')">Coverage Map</button>
+      <button class="tablinks" onclick="openMenu(event, 'Donate')">Donate</button>
+      <button class="tablinks" onclick="openMenu(event, 'Contact')">Contact</button>
+    </div>
+
+    <div id="Home" class="tabcontent">
+      <h3>Rugged 575</h3>
+      <p>Some info about the tower maybe?</p>
+    </div>
+
+    <div id="Events" class="tabcontent">
+      <h3>Event Calender</h3>
+      <p>A list of upcoming events and weekly nets.</p>
+    </div>
+
+    <div id="Coverage" class="tabcontent">
+      <script src="scripts/map.js"></script>
+      <script src="scripts/overlay.js"></script>
+      <table width="100%">
+        <tr>
+          <th colspan="2">Mobile Coverage</th>
+        </tr>
+        <tr>
+          <td bgcolor="#E0E0E0" colspan="2">
+            <form name="form2">
+              <select onchange="javascript:selectmaptiles(parseInt(this.value));">
+                <option value="0" selected>OSM - R</option>
+                <option value="3">USGS - Topo</option>
+                <option value="4">USGS - Sat</option>
+                <option value="5">OpenTopoMap</option>
+                <option value="6">OSM - G</option>
+              </select>
+              <select onchange="javascript:showcov(parseInt(this.value));">
+                <option value="0">None</option>
+                <option value="1" selected>50 Watts</option>
+                <option value="2">5 Watts</option>
+              </select>
+              <input type="checkbox" name="ckm1" checked="true" onclick="showtow(mk1,ckm1);">Rugged 575
+              Tower</input>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <div id="map_canvas" style="width:100%"></div>
+    </div>
+
+    <div id="Donate" class="tabcontent">
+      <h3>Donations</h3>
+      <p>Here is a good place to explain costs and upkeep and beg for money.</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact Information</h3>
+      <p>Here is a good place to put Rob's email address.</p>
+    </div>
+
+  </main>
 </body>
 
 </html>
