@@ -6,6 +6,7 @@ function openMenu(evt, menuName) {
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.visibility = "hidden";
+      tabcontent[i].style.height = "0px";
     }
   
     // Get all elements with class="tablinks" and remove the class "active"
@@ -15,9 +16,9 @@ function openMenu(evt, menuName) {
     }
   
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(menuName).style.display = "block";
+    document.getElementById(menuName).style.visibility = "visible";
+    document.getElementById(menuName).style.height = "100%";
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultTab").click();
-  window.dispatchEvent(new Event('resize'));  
   
