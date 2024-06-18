@@ -12,6 +12,7 @@ function showcov(m) {
     if (m === parseInt("0")) {
         rmap1.setVisible('false');
         rmap2.setVisible('false');
+        console.log('blank')
     }
     if (m === "1") {
         rmap1.setVisible('true');
