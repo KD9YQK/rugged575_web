@@ -22,7 +22,12 @@ function showcov(m) {
 }
 
 function showtow(t) {
-    mk1.setVisible(t.checked)
+    if (t.checked) {
+        mk1.setVisible(true)
+    } else (
+        mk1.setVisible(false)
+    )
+    
 }
 
 function do_overlays() {
