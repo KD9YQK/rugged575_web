@@ -9,7 +9,6 @@ function showcov(m) {
     if (m === parseInt("0")) {
         rmap1.setVisible(false);
         rmap2.setVisible(false);
-        console.log('blank')
     }
     if (m === parseInt("1")) {
         rmap1.setVisible(true);
@@ -22,11 +21,10 @@ function showcov(m) {
 }
 
 function showtow(t) {
-    console.log('triggered')
     if (t.checked) {
-        mk1.setVisible(true)
+        mk1.setVisible(true);
     } else (
-        mk1.setVisible(false)
+        mk1.setVisible(false);
     )
     
 }
@@ -38,6 +36,6 @@ function do_overlays() {
 function docov() {
     rmap1 = addimage("images/overlay_50w.png", 39.10396, -91.85728, 44.49989, -84.61884);
     rmap2 = addimage("images/overlay_5w.png", 39.10396, -91.85728, 44.49989, -84.61884);
-    rmap2.setVisible("false")
+    rmap2.setVisible("false");
     mk1 = addmarker(0, 41.80192219, -88.23806177, "x");
 }
