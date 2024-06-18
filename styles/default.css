@@ -45,6 +45,7 @@ body {
     border: 1px solid #ccc;
     background-color: tan;
     width: 10%;
+    height: 100%;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -77,7 +78,7 @@ body {
     padding: 0px 12px;
     border: 1px solid #ccc;
     width: 90%;
-    height: 90%;
+    height: 800px;
     border-left: none;
   }
 
