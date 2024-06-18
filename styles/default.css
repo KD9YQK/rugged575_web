@@ -36,14 +36,14 @@ body {
     text-transform: uppercase;
     margin: 20px 0;
   }
-
+/*
   * {box-sizing: border-box}
-
+*/
   /* Style the tab */
   .tab {
     float: left;
     border: 1px solid #ccc;
-    background-color: burlywood;
+    background-color: tan;
     width: 30%;
   }
   
