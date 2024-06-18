@@ -5,7 +5,7 @@ function openMenu(evt, menuName) {
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.visibility = "hidden";
+      tabcontent[i].style.display = "none";
     }
   
     // Get all elements with class="tablinks" and remove the class "active"
@@ -15,8 +15,9 @@ function openMenu(evt, menuName) {
     }
   
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(menuName).style.visibility = "visible";
+    document.getElementById(menuName).style.display = "block";
+    map.updateSize();
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultTab").click();
-  
+  document.getElementById("defaultTab").click();  
