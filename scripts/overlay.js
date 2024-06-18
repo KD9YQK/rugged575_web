@@ -23,9 +23,9 @@ function showcov(m) {
 function showtow(t) {
     if (t.checked) {
         mk1.setVisible(true);
-    } else (
+    } else {
         mk1.setVisible(false);
-    )
+    }
     
 }
 
