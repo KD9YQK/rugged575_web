@@ -5,7 +5,7 @@ function openMenu(evt, menuName) {
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      tabcontent[i].style.visibility = "hidden";
     }
   
     // Get all elements with class="tablinks" and remove the class "active"
