@@ -16,8 +16,6 @@ function openMenu(evt, menuName) {
   
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(menuName).style.display = "block";
-    map.updateSize();
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultTab").click();
-  document.getElementById("defaultTab").click();  
