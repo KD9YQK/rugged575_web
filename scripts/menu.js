@@ -19,4 +19,5 @@ function openMenu(evt, menuName) {
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultTab").click();
+  window.dispatchEvent(new Event('resize'));  
   
