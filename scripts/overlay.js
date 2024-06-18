@@ -1,6 +1,4 @@
-var infowindow, ie;
 function initialize() {
-    ie = (document.all && !window.opera && window.XMLHttpRequest) ? true : false;
     initmap('map_canvas', 'test', null, null, null, null, 0);
     setmap(41.8019218444824, -88.2380599975586, 6);
     do_overlays();
@@ -8,19 +6,18 @@ function initialize() {
 
 var rmap1, rmap2, mk1;
 function showcov(m) {
-    console.log(m)
     if (m === parseInt("0")) {
-        rmap1.setVisible('false');
-        rmap2.setVisible('false');
+        rmap1.setVisible(false);
+        rmap2.setVisible(false);
         console.log('blank')
     }
-    if (m === "1") {
-        rmap1.setVisible('true');
-        rmap2.setVisible('false');
+    if (m === parseInt("1")) {
+        rmap1.setVisible(true);
+        rmap2.setVisible(false);
     }
-    if (m === "2") {
-        rmap1.setVisible('false');
-        rmap2.setVisible('true');
+    if (m === parseInt("2")) {
+        rmap1.setVisible(false);
+        rmap2.setVisible(true);
     }
 }
 
