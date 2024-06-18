@@ -22,6 +22,7 @@ function showcov(m) {
 }
 
 function showtow(t) {
+    console.log('triggered')
     if (t.checked) {
         mk1.setVisible(true)
     } else (
