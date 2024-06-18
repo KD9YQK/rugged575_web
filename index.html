@@ -23,14 +23,10 @@
       <button class="tablinks" onclick="openMenu(event, 'Donate')">Donate</button>
       <button class="tablinks" onclick="openMenu(event, 'Contact')">Contact</button>
     </div>
-    <script>
-      document.getElementById("defaultTab").click();
-    </script>
     <div id="Home" class="tabcontent">
       <h3>Rugged 575</h3>
       <p>Some info about the tower maybe?</p>
     </div>
-
     <div id="Events" class="tabcontent">
       <h3>Event Calender</h3>
       <p>A list of upcoming events and weekly nets.</p>
@@ -51,7 +47,7 @@
                 <option value="5">OpenTopoMap</option>
                 <option value="6">OSM - G</option>
               </select>
-              <select onchange="javascript:showcov(this.value);">
+              <select onchange="javascript:showcov(parseInt(this.value));">
                 <option value="0">None</option>
                 <option value="1" selected>50 Watts</option>
                 <option value="2">5 Watts</option>
@@ -81,4 +77,7 @@
   </main>
   
 </body>
+<script>
+  document.getElementById("defaultTab").click();
+</script>
 </html>

@@ -8,7 +8,8 @@ function initialize() {
 
 var rmap1, rmap2, mk1;
 function showcov(m) {
-    if (m === "0") {
+    console.log(m)
+    if (m === parseInt("0")) {
         rmap1.setVisible('false');
         rmap2.setVisible('false');
     }
