@@ -1,3 +1,5 @@
+document.getElementById("defaultOpen").click();
+
 function openMenu(evt, menuName) {
     // Declare all variables
     var i, tabcontent, tablinks;
